@@ -1,0 +1,48 @@
+
+.img_box{
+    min-height: 350px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+}
+.image{
+    margin-bottom: 15px;
+}
+.img_box .image img{
+    max-height: 160px;
+    max-width: auto;
+}
+.img_box h3{
+    text-align: center;
+    font-size: 18px;
+    color: #000000;
+    font-weight: 700;
+}
+.list-group-item{
+    border:none;
+}
+a.btn{
+    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    background-color: hsl(49, 78%, 52%);
+    padding: 7px 15px;
+}
+.image{
+    animation-name: flo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    position: relative;
+    bottom: 20px;
+  
+  }
+  @keyframes flo{
+    50%{
+      transform: translateY(30px);
+    }
+  }
+  i{
+    margin-right: 10px;
+    font-weight: 700;
+    color: hsl(49, 78%, 52%);
+  }
