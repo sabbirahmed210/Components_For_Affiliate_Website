@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+    table{
+    width: 100%;
+}
+tr{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    text-align: left;
+}
+.odd{
+    width: 100%;
+    min-height:40px;
+    background-color: #f9fafb;
+}
+.even{
+    width: 100%;
+    min-height:40px;
+    background-color: #ffffff;
+}
+.column-1 img{
+    width: 250px;
+    height: 160px;
+}
+.even:hover, .odd:hover{
+    background-color: #e3e3e4;
+}
+ion-icon{
+    color: gold;
+}
+@media only screen and (max-width: 767px){
+    table{
+        max-width: 100%;
+    }
+    .row-1{
+        display: none !important;
+    }
+    tr{
+        grid-template-columns: auto;
+        justify-content: center;
+        padding: 25px 0px;
+    }
+}
+    
+
+    </style>
+</head>
+<body>
+    <table align="center">
+        <thead>
+            <tr class="row-1 odd">
+                <th class="column-1">Image</th>
+                <th class="column-2">Product</th>
+                <th class="column-3">Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="row-2 even">
+               <td class="column-1">
+                <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/41fiM0i2chL._AC_SX679_.jpg" alt="">
+               </td>
+               <td class="column-2">
+                <p>Mevlzz Mens Casual Athletic Sneakers</p>
+                <strong>Our rating: </strong>
+                <div class="stars">
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                </div>
+               </td>
+               <td class="column-3"><a href="#" class="btn" tabindex="-1" role="button" aria-disabled="true">Primary link</a></td> 
+            </tr>
+            <tr class="row-3 odd">
+                <td class="column-1">
+                    <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/41fiM0i2chL._AC_SX679_.jpg" alt="">
+                   </td>
+                   <td class="column-2">
+                    <p>Mevlzz Mens Casual Athletic Sneakers</p>
+                    <strong>Our rating: </strong>
+                    <div class="stars">
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                    </div>
+                   </td>
+                   <td class="column-3"><a href="#" class="btn" tabindex="-1" role="button" aria-disabled="true">Primary link</a></td> 
+             </tr>
+             <tr class="row-4 even">
+                <td class="column-1">
+                    <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/41fiM0i2chL._AC_SX679_.jpg" alt="">
+                   </td>
+                   <td class="column-2">
+                    <p>Mevlzz Mens Casual Athletic Sneakers</p>
+                    <strong>Our rating: </strong>
+                    <div class="stars">
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                    </div>
+                   </td>
+                   <td class="column-3"><a href="#" class="btn" tabindex="-1" role="button" aria-disabled="true">Primary link</a></td> 
+             </tr>
+        </tbody>
+    </table>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
